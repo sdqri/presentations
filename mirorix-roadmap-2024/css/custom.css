@@ -1,0 +1,82 @@
+#team-composition {
+    text-align: center;
+    width: 1400px;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+.team-member {
+    display: flex;
+    align-items: center;
+    margin: 20px 20px -80px 20px;
+    position: relative;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.member-details {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.member-details h2,
+.member-details p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+#player {
+    position: fixed;
+    top: -400px;
+    left: -1000px;
+    width: 3000px;
+    height: 1130px;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+.figures-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: -400px;
+    top: -400px;
+    width: 80%;
+}
+
+.figure {
+    width: 45%;
+    margin: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.figure img {
+    width: 100%;
+    display: block;
+}
+
+.small-text{
+    font-size: 2rem;;    
+}
+

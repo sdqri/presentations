@@ -1,0 +1,404 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by
+        Bartek Szopka @bartaz</title>
+
+    <meta name="description"
+        content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
+    <meta name="author" content="Bartek Szopka" />
+
+    <link
+        href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
+        rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/impress-common.css" rel="stylesheet" />
+    <link href="css/custom.css" rel="stylesheet" />
+
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a
+            simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+
+    <div id="impress" data-transition-duration="1000" data-width="1920" data-height="1080" data-max-scale="3"
+        data-min-scale="0" data-perspective="1000" data-autoplay="0">
+
+        <div id="title" class="step" data-x="0" data-y="0" data-z="30000" data-scale="4" data-autoplay="0">
+            <span class="try">2024</span>
+            <h1>Mirorix</h1>
+            <div id="player"></div>
+        </div>
+
+        <div id="april-2023" class="step" data-x="0" data-y="0" data-z="15000" data-scale="4" data-autoplay="0">
+            <p style="position: absolute;">April 2023: Challenges & limitations</p>
+        </div>
+
+        <div id="homepage" class="step" data-x="0" data-y="0" data-z="10000">
+            <img src="img/mainpage_2023_unauthenticated.png" alt="mirorix home page" height="900"
+                style="border: 5px solid gray;width: 200%; margin-left: -400px;" />
+        </div>
+
+
+        <div id="category" class="step helper-border" data-rel-x="0" data-rel-y="-430" data-scale="0.50">
+            <div class="substep" style="    border: 2px solid red;
+        width: 157%;
+        height: 100%;
+        border-radius: 20px;
+        position: absolute;
+        top: 194px;
+        left: -244px;"></div>
+            <ul style="position: absolute;
+        top: -400px;
+        width: 199%;
+        left: -300px;
+        list-style-type: disc;">
+                <li class="substep">Solely covered sports news at the time -> Limited content diversity
+                </li>
+                <li class="substep">Language-specific categorization -> Hindered platform performance and scalability
+                </li>
+                <li class="substep">New language implementation necessitated a complete pipeline overhaul, impeding content expansion efforts.</li>
+            </ul>
+        </div>
+
+        <div id="pre-registration" class="step" data-rel-x="-650" data-rel-y="0" data-scale="0.6">
+            <div class="substep" style="border: 2px solid red;
+                width: 33%;
+                height: 106%;
+                border-radius: 20px;
+                position: absolute;
+                top: 3px;
+                left: 285px;"></div>
+        </div>
+
+        <div id="registration" class="step" data-rel-x="-500" data-rel-y="1000" data-rel-z="-1500" data-rotate-x="90"
+            data-scale="0.6">
+            <img src="img/registration_page_2023.jpeg" alt="Evergreen CI result page" height="900"
+                style="border: 5px solid gray;margin-left: -400px;" />
+            <ul style="position: absolute;
+            width: 100%;
+            top: 150px;
+            left: 500px;
+            list-style-type: disc;">
+                <li class="substep">Limited to OTP verification only -> Restricted user choice and accessibility
+                </li>
+                <li class="substep">Insufficient user information gathered -> Hindered delivery of personalized
+                    experiences
+                </li>
+                <li class="substep">No email registration option provided -> Restricted authentication methods and
+                    service personalization
+                </li>
+            </ul>
+        </div>
+
+        <div id="language" class="step" data-rel-to="pre-registration" data-rel-x="0" data-rel-y="0" data-scale="0.6">
+            <div class="substep" style="border: 2px solid red;
+            width: 6%;
+            height: 68%;
+            border-radius: 20px;
+            position: absolute;
+            top: 18px;
+            left: 593px;"></div>
+
+            <ul style="position: absolute;
+            width: 100%;
+            top: -410px;
+            left: -557px;
+            list-style-type: disc;">
+                <li class="substep">Heavy dependence on language-specific architecture -> Hindered development and
+                    maintenance
+                </li>
+                <li class="substep">Feature replication across languages required -> Increased development complexities
+                </li>
+            </ul>
+        </div>
+
+        <div id="timeline" class="step" data-rel-to="homepage" data-rel-x="500" data-rel-y="300" data-scale="1">
+            <div class="substep" style="    border: 2px solid red;
+            width: 99%;
+            height: 818%;
+            border-radius: 20px;
+            position: absolute;
+            top: -460px;
+            left: -441px;"></div>
+
+            <ul style="position: absolute;
+            width: 100%;
+            top: -308px;
+            left: 609px;
+            list-style-type: disc;">
+                <li class="substep">Low-quality parser and content -> Unengaging news feeds
+                </li>
+                <li class="substep">Limited user access to news details -> Diminished user engagement
+                </li>
+                <li class="substep">Absence of feedback mechanisms -> Neglected user preferences
+                </li>
+                <li class="substep">Image delivery speed and quality issues -> Suboptimal user experience
+                </li>
+                <li class="substep">Design flaws in news cards -> Compromised visual appeal
+                </li>
+                <li class="substep">Slow scrolling performance -> Detracted from user satisfaction
+                </li>
+
+            </ul>
+        </div>
+
+        <div id="details" class="step" data-x="0" data-y="3000" data-rel-z="0" data-scale="1">
+
+
+            <p style="width: 120%; margin-bottom: 20px;">Our use of iframes or redirects on the news details page
+                compromised our
+                <strong>SEO</strong> efforts and resulted in missed opportunities for <strong>user engagement</strong>
+                and <strong>retention.</strong>
+            </p>
+            <img src="img/mainpage_2023_details_page.png" alt="mirorix home page" style="border: 5px solid gray;
+                width: 100%;
+                height: 100%;
+                " />
+        </div>
+
+        <!-- <div id="details" class="step" data-rel-to="homepage" data-rel-x="500" data-rel-y="0" data-rel-z="-1000" data-rotate-y="90"
+            data-scale="0.6">
+            dsafjkl
+            style="border: 5px solid gray;width: 200%; margin-left: -400px;"/>
+        </div> -->
+
+        <div id="analytics" class="step" data-rel-x="2000" data-rel-y="0" data-scale="1">
+            <img src="img/empty_box.png" style="position: absolute;
+            width: 50%;
+            top: -400px;
+            left: -300px;">
+            <ul style="position: absolute;
+            width: 100%;
+            list-style-type: disc;
+            left: 300px;
+            top: -50px;">
+                <li class="substep">Absence of robust analytics frameworks -> Hindered insights derivation
+                </li>
+                <li class="substep">Limited progress evaluation capabilities -> Impeded success measurement efforts
+                </li>
+            </ul>
+        </div>
+
+        <div id="team-composition" class="step" data-rel-x="2000" data-rel-y="0" data-scale="1">
+            <h1>Team Composition</h1>
+            <div class="team-members">
+                <div class="team-member left">
+                    <div class="member-details">
+                        <h2>Sadiq Rahmati</h2>
+                        <p>Software Engineer</p>
+                    </div>
+                    <img src="img/sadiq_rahmati.jpeg" alt="Team Member 1">
+                </div>
+                <div class="team-member right">
+                    <img src="img/hossein_khalilian.jpeg" alt="Team Member 1">
+                    <div class="member-details">
+                        <h2>Hossein Khaliliian</h2>
+                        <p>AI Engineer</p>
+                    </div>
+                </div>
+                <div class="team-member left">
+                    <div class="member-details">
+                        <h2>Pouria Meftahi</h2>
+                        <p>Frontend Developer</p>
+                    </div>
+                    <img src="img/pouria_meftahi.jpg" alt="Team Member 2">
+                </div>
+                <div class="team-member right">
+                    <img src="img/alireza_nemati.jpeg" alt="Team Member 2">
+                    <div class="member-details">
+                        <h2>Alireza Nemati</h2>
+                        <p>Software Developer</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="2023-objectives" class="step" data-rel-x="2000" data-rel-y="0" data-scale="1">
+            <h1 style="margin-bottom: 50px;"><strong>In april of 2023 we had 2 objectives:</strong></h1>
+            <ul style="margin-left: -204px;
+            width: 150%;
+            list-style-type: disc;">
+                <li class="substep">Deriving actionable insights from our services and integrating them into our
+                    decision-making processes. This involved leveraging data analytics to gain deeper understanding and
+                    drive strategic decisions across our platform.</li>
+                <li class="substep">Addressing obvious performance, scalability, and adaptability flaws within our
+                    infrastructure. Our aim was to enhance the overall efficiency and resilience of our platform,
+                    ensuring it could meet the evolving needs of our users and scale effectively.</li>
+            </ul>
+        </div>
+
+        <div id="april-2024" class="step" data-x="10000" data-y="0" data-z="15000" data-scale="4" data-autoplay="0">
+            <p style="position: absolute;">Progress in March 2024</p>
+        </div>
+
+        <div id="homepage-new" class="step" data-x="10000" data-y="0" data-z="10000">
+            <img src="img/mainpage_2024_unauthenticated.jpeg" alt="mirorix home page" height="900"
+                style="border: 5px solid gray;width: 200%; margin-left: -400px;" />
+        </div>
+
+
+        <div id="category-new" class="step helper-border" data-rel-x="0" data-rel-y="-430" data-scale="0.50">
+            <div class="substep" style="    border: 2px solid red;
+            width: 157%;
+            height: 100%;
+            border-radius: 20px;
+            position: absolute;
+            top: 74px;
+            left: 43px;"></div>
+            <ul style="position: absolute;
+        top: -400px;
+        width: 199%;
+        left: -300px;
+        list-style-type: disc;">
+                <li class="substep">We established a hierarchical category system, beginning with nine general categories.                </li>
+                <li class="substep">We've transitioned to using a zero-shot classifier model, eliminating language dependency and enhancing platform performance and scalability.                </li>
+                <li class="substep">We've extended our approach to topic detection, leveraging the same language-agnostic strategy, further enhancing platform scalability and content diversity.</li>
+            </ul>
+        </div>
+
+        <div id="pre-registration-new" class="step" data-rel-x="650" data-rel-y="0" data-scale="0.6">
+            <div class="substep" style="border: 2px solid red;
+            width: 16%;
+            height: 61%;
+            border-radius: 20px;
+            position: absolute;
+            top: 15px;
+            left: 581px;"></div>
+        </div>
+
+        <div id="registration-new" class="step" data-rel-x="500" data-rel-y="1000" data-rel-z="-1500"
+            data-rotate-x="90" data-scale="0.6">
+            <img src="img/registration_page_2024.png" alt="Evergreen CI result page" height="900"
+                style="border: 5px solid gray;margin-left: -400px;" />
+            <ul style="position: absolute;
+            width: 100%;
+            top: 150px;
+            left: 500px;
+            list-style-type: disc;">
+                <li class="substep">We've expanded authentication options to include phone or email verification through password, OTP, or OpenID.
+                </li>
+                <li class="substep">We now gather all necessary user information during the registration process.
+                </li>
+            </ul>
+        </div>
+
+        <div id="language-new" class="step" data-rel-to="pre-registration-new" data-rel-x="0" data-rel-y="800"
+            data-scale="0.6">
+            <div class="substep" style="    border: 2px solid red;
+            width: 10%;
+            height: 69%;
+            border-radius: 20px;
+            position: absolute;
+            top: -30px;
+            left: 525px;"></div>
+
+            <ul style="position: absolute;
+            width: 100%;
+            top: -459px;
+            left: 592px;
+            list-style-type: disc;">
+                <li class="substep">Our backend infrastructure has been revamped to be language-agnostic, enabling seamless addition of new languages to the site without pipeline overhauls.
+                </li>
+                <li class="substep">Feature replication across languages is no longer necessary, reducing development complexities.
+                </li>
+            </ul>
+        </div>
+
+        <div id="timeline-new" class="step small-text" data-rel-to="homepage-new" data-rel-x="-300" data-rel-y="350" data-rel-z="500" data-scale="1">
+            <div class="substep" style="    border: 2px solid red;
+            width: 72%;
+            height: 742%;
+            border-radius: 20px;
+            position: absolute;
+            top: -486px;
+            left: 384px;"></div>
+
+            <ul style="position: absolute;
+            width: 100%;
+            top: -308px;
+            left: -518px;
+            list-style-type: disc;">
+                <li class="substep">We've enhanced Palantiri with a higher-quality parser, resulting in more engaging news feeds.
+                </li>
+                <li class="substep">We've introduced Intellisent, an extractive summarizer service, to expand users' access to news details directly within the timeline, enhancing user engagement.</li>
+                <li class="substep">Poplar, our feedback service, has been integrated, allowing users to express preferences and shape their news experience.
+                </li>
+                <li class="substep">Rigel's image delivery speed and quality have been optimized, leading to a more satisfactory user experience.</li>
+                <li class="substep">Design flaws in news cards have been rectified, improving visual appeal and usability.</li>
+                <li class="substep">We've implemented a completely new timeline service that utilizes recommendation data from all services, creating a unique timeline for our users and onboarding those unfamiliar with our site.
+                </li>
+
+            </ul>
+        </div>
+
+        <div id="details-new" class="step" data-x="10000" data-y="3000" data-rel-z="0" data-scale="1">
+            <p style="width: 120%; margin-bottom: 20px;">Our use of iframes or redirects on the news details page
+                
+            </p>
+            <img src="img/mainpage_2024_details_page.png" alt="mirorix home page" style="border: 5px solid gray;
+                width: 100%;
+                height: 100%;
+                " />
+        </div>
+
+        <div id="analytics-new" class="step" data-rel-x="2000" data-rel-y="0" data-scale="1">
+            <div class="figures-container">
+                <div class="figure">
+                  <img src="img/fig1.jpeg" alt="Figure 1">
+                </div>
+                <div class="figure">
+                  <img src="img/fig2.jpeg" alt="Figure 2">
+                </div>
+                <div class="figure">
+                  <img src="img/fig3.jpeg" alt="Figure 3">
+                </div>
+                <div class="figure">
+                  <img src="img/fig4.jpeg" alt="Figure 4">
+                </div>
+            </div>
+            <ul style="position: absolute;
+            margin-left: 40%;
+            width: 100%;
+            top: -542%;
+            list-style-type: disc;">
+                <li class="substep">We've developed Hume, a new analytics service, providing comprehensive insights into user engagement, session duration, and content preferences.</li>
+                <li class="substep">It provides data analytics from the initial data ingestion phase to the final user interaction, enabling us to track and analyze data flow and user behavior comprehensively.</li>
+                <li class="substep">Leveraging advanced analytics techniques, Hume ensures optimized data processing and analysis, facilitating informed decision-making and continuous improvement across the platform.</li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div id="impress-toolbar"></div>
+
+    <div class="hint">
+        <p>Use a spacebar or arrow keys to navigate. <br />
+            Press 'P' to launch speaker console.</p>
+    </div>
+
+    <script>
+        if ("ontouchstart" in document.documentElement) {
+            document.querySelector(".hint").innerHTML = "<p>Swipe left or right to navigate</p>";
+        }
+    </script>
+
+
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
+
+</body>
+
+</html>
