@@ -80,3 +80,16 @@
     font-size: 2rem;;    
 }
 
+.footnote{
+    font-size: 24px;
+}
+
+.bullet-points{
+    list-style-type: disc;
+}
+
+.circle-points{
+    list-style-type: circle;
+    margin-left: 40px;
+}
+
