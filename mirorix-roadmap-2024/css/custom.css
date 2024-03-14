@@ -76,20 +76,31 @@
     display: block;
 }
 
-.small-text{
-    font-size: 2rem;;    
+.small-text {
+    font-size: 2rem;
+    ;
 }
 
-.footnote{
+.footnote {
     font-size: 24px;
 }
 
-.bullet-points{
+.bullet-points {
     list-style-type: disc;
 }
 
-.circle-points{
+.circle-points {
     list-style-type: circle;
     margin-left: 40px;
 }
 
+/* Add any custom styles for the map here */
+.country {
+    stroke: #666;
+    stroke-width: 0.5px;
+}
+
+.label {
+    font-size: 12px;
+    text-anchor: middle;
+}

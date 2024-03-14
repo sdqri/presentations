@@ -12,6 +12,7 @@
     <meta name="mirorix 2024" content="mirorix 2024" />
     <meta name="author" content="Sadiq Rahmati" />
 
+    <script src="https://d3js.org/d3.v7.min.js"></script>
     <link
         href="//fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
         rel="stylesheet" />
@@ -401,7 +402,34 @@
             </ul>
         </div>
 
-        <div id="year-ahead" class="step" data-x="15000" data-y="0" data-z="15000" data-scale="1">
+        <div id="vision" class="step" data-x="15000" data-y="0" data-z="15000" data-scale="1">
+            <p style="position: absolute;">Product's 2028 Vision and Market Analysis</p>
+        </div>
+
+        <div id="mena" class="step small-text" data-rel-y="1500" data-z="15000" data-scale="1">
+            <div style="margin-top: -400px;">
+                <h1 style="text-align: center;">MENA Region Data Exploration</h1>
+                <div style="text-align: center;">
+                    <label for="property-select">Select property:</label>
+                    <select id="property-select" style="font-size: 18px;">
+                        <option value="index">Digital Urbanization Index</option>
+                        <option value="population">Population</option>
+                        <option value="newsConsumers">Targeted News Consumers</option>
+                        <option value="educationalAttainment">Educational Attainment</option>
+                        <option value="potentialSubscribers">Targeted Potential Subscribed User</option>
+                        <option value="gdp">GDP (USD)</option>
+                        <option value="targeted">Targeted Regions</option>
+                    </select>
+                </div>
+            </div>
+            <svg id="mena-map" style="position: absolute;
+            top: 50%;
+            left: 90%;
+            transform: translate(-50%, -50%); z-index: -1;" width="1920px" height="1080px"></svg>
+        </div>
+
+
+        <div id="year-ahead" class="step" data-x="20000" data-y="0" data-z="15000" data-scale="1">
             <p style="position: absolute;">Objectives for the Year Ahead:</p>
         </div>
 
@@ -447,29 +475,29 @@
             </br>
             </br>
             <span class="footnote">
-            <ol class="bullet-points">
-                <li><strong>Subscription Model</strong>
-                    <ol class="circle-points">
-                        <li>Provides a predictable and recurring revenue stream</li>
-                        <li>Fosters a sense of loyalty and commitment among subscribers.</li>
-                    </ol>
-                </li>
-                <li><strong>Affiliate Marketing</strong>
-                    <ol class="circle-points">
-                        <li>Expands revenue streams beyond traditional advertising methods.</li>
-                        <li>Provides opportunities for targeted marketing and cross-promotion with event-related
-                            content.
-                        </li>
-                    </ol>
-                </li>
-                <li><strong>Real-Time Bidding (RTB)</strong>
-                    <ol class="circle-points">
-                        <li>Increases competition among advertisers, leading to potentially higher CPM rates.</li>
-                        <li>Offers flexibility and scalability in ad inventory management and optimization</li>
-                        <li>We can revenue share with sources creating a non-zero-sum game.</li>
-                    </ol>
-                </li>
-            </ol>
+                <ol class="bullet-points">
+                    <li><strong>Subscription Model</strong>
+                        <ol class="circle-points">
+                            <li>Provides a predictable and recurring revenue stream</li>
+                            <li>Fosters a sense of loyalty and commitment among subscribers.</li>
+                        </ol>
+                    </li>
+                    <li><strong>Affiliate Marketing</strong>
+                        <ol class="circle-points">
+                            <li>Expands revenue streams beyond traditional advertising methods.</li>
+                            <li>Provides opportunities for targeted marketing and cross-promotion with event-related
+                                content.
+                            </li>
+                        </ol>
+                    </li>
+                    <li><strong>Real-Time Bidding (RTB)</strong>
+                        <ol class="circle-points">
+                            <li>Increases competition among advertisers, leading to potentially higher CPM rates.</li>
+                            <li>Offers flexibility and scalability in ad inventory management and optimization</li>
+                            <li>We can revenue share with sources creating a non-zero-sum game.</li>
+                        </ol>
+                    </li>
+                </ol>
             </span>
         </div>
 
@@ -479,15 +507,15 @@
             </br>
             </br>
             <span class="footnote">
-            <ol class="bullet-points">
-                <li><strong>Topic-Driven Content Curation & Automated Topic Page Assembly</strong></li>
-                <li><strong>Introduction of User Personalization Features</strong></li>
-                <li><strong>Refining our strategies in Decima (Timeline Service) through A/B Testing</strong></li>
-                <li><strong>Comprehensive Platform Enhancement Roadmap, Including Mobile App Development</strong>
-                </li>
-                <li><strong>Implementation of Notification and Newsletter Features for Enhanced User
-                        Retention</strong></li>
-            </ol>
+                <ol class="bullet-points">
+                    <li><strong>Topic-Driven Content Curation & Automated Topic Page Assembly</strong></li>
+                    <li><strong>Introduction of User Personalization Features</strong></li>
+                    <li><strong>Refining our strategies in Decima (Timeline Service) through A/B Testing</strong></li>
+                    <li><strong>Comprehensive Platform Enhancement Roadmap, Including Mobile App Development</strong>
+                    </li>
+                    <li><strong>Implementation of Notification and Newsletter Features for Enhanced User
+                            Retention</strong></li>
+                </ol>
             </span>
         </div>
 
@@ -495,22 +523,23 @@
             <h1>Regulatory and Quality Goals:</h1>
             </br>
             <span class="footnote">
-            <ol class="bullet-points">
-                <li><strong>Incorporation of Content Moderation Features</strong></li>
-                <li><strong>Exploring Feasibility for Live Video Streaming Partnerships in Event-Based
-                    Marketing</strong></li>
-                <li><strong>Creation of News Agency Panel for Limited Content Moderation Tools</strong></li>
-            </ol>
+                <ol class="bullet-points">
+                    <li><strong>Incorporation of Content Moderation Features</strong></li>
+                    <li><strong>Exploring Feasibility for Live Video Streaming Partnerships in Event-Based
+                            Marketing</strong></li>
+                    <li><strong>Creation of News Agency Panel for Limited Content Moderation Tools</strong></li>
+                </ol>
             </span>
             </br>
             <h1>Quality Goals:</h1>
             </br>
             <span class="footnote">
-            <ol class="bullet-points">
-                <li><strong>Integration of Video Detection Technology for Multimedia Content Identification</strong></li>
-                <li><strong>Improvement of Parser Quality for Accurate Content Extraction</strong></li>
-                <li><strong>Enhancement of Speed, Freshness, and Age Metrics in Palantiri (Crawler)</strong></li>
-            </ol>
+                <ol class="bullet-points">
+                    <li><strong>Integration of Video Detection Technology for Multimedia Content Identification</strong>
+                    </li>
+                    <li><strong>Improvement of Parser Quality for Accurate Content Extraction</strong></li>
+                    <li><strong>Enhancement of Speed, Freshness, and Age Metrics in Palantiri (Crawler)</strong></li>
+                </ol>
             </span>
 
         </div>
@@ -534,6 +563,129 @@
 
     <script src="js/impress.js"></script>
     <script>impress().init();</script>
+
+    <script>
+        const svg = d3.select("#mena-map");
+        const propertySelect = document.getElementById("property-select");
+        const data = [
+            { country: "Algeria", index: 0.53, population: 44800000, newsConsumers: 10425285, educationalAttainment: 75.3, potentialSubscribers: 0.53, gdp: 11000, targeted: 0 },
+            { country: "Bahrain", index: 0.89, population: 1600000, newsConsumers: 799220, educationalAttainment: 89, potentialSubscribers: 0.89, gdp: 49400, targeted: 1 },
+            { country: "Djibouti", index: 0.0, population: 0, newsConsumers: 0, educationalAttainment: 0, potentialSubscribers: 0, gdp: 0, targeted: 0 },
+            { country: "Egypt", index: 0.31, population: 110000000, newsConsumers: 13995432, educationalAttainment: 43.1, potentialSubscribers: 0.31, gdp: 11600, targeted: 0 },
+            { country: "Iran", index: 0.61, population: 88000000, newsConsumers: 26045076, educationalAttainment: 77.3, potentialSubscribers: 0.61, gdp: 15000, targeted: 0 },
+            { country: "Iraq", index: 0.35, population: 41000000, newsConsumers: 6771212, educationalAttainment: 71.6, potentialSubscribers: 0.35, gdp: 9000, targeted: 0 },
+            { country: "Jordan", index: 0.76, population: 11000000, newsConsumers: 3818000, educationalAttainment: 92, potentialSubscribers: 1.0, gdp: 9200, targeted: 1 },
+            { country: "Kuwait", index: 1.0, population: 3100000, newsConsumers: 1843000, educationalAttainment: 89.4, potentialSubscribers: 0.78, gdp: 43900, targeted: 1 },
+            { country: "Lebanon", index: 0.78, population: 5400000, newsConsumers: 1963895, educationalAttainment: 81.6, potentialSubscribers: 0.38, gdp: 13000, targeted: 0 },
+            { country: "Libya", index: 0.38, population: 7200000, newsConsumers: 1219569, educationalAttainment: 65.1, potentialSubscribers: 0.57, gdp: 22000, targeted: 0 },
+            { country: "Morocco", index: 0.57, population: 37000000, newsConsumers: 9309300, educationalAttainment: 88.4, potentialSubscribers: 0.85, gdp: 8100, targeted: 0 },
+            { country: "Oman", index: 0.85, population: 3800000, newsConsumers: 1691340, educationalAttainment: 99.4, potentialSubscribers: 0.99, gdp: 34300, targeted: 1 },
+            { country: "Qatar", index: 0.99, population: 2500000, newsConsumers: 1823990, educationalAttainment: 85, potentialSubscribers: 0.85, gdp: 92900, targeted: 1 },
+            { country: "Saudi Arabia", index: 0.85, population: 36000000, newsConsumers: 16745000, educationalAttainment: 57.4, potentialSubscribers: 0.27, gdp: 44300, targeted: 1 },
+            { country: "Syria", index: 0.27, population: 23000000, newsConsumers: 5740000, educationalAttainment: 70.5, potentialSubscribers: 0.56, gdp: 2900, targeted: 0 },
+            { country: "Tunisia", index: 0.56, population: 12000000, newsConsumers: 12000000, educationalAttainment: 87.8, potentialSubscribers: 0.88, gdp: 10400, targeted: 0 },
+            { country: "United Arab Emirates", index: 0.88, population: 10000000, newsConsumers: 3150000, educationalAttainment: 39.8, potentialSubscribers: 0.11, gdp: 69700, targeted: 1 },
+            { country: "Yemen", index: 0.11, population: 31500000, newsConsumers: 1450392, educationalAttainment: 71, potentialSubscribers: 0.35, gdp: 2500, targeted: 0 }
+        ];
+
+        const projection = d3.geoMercator()
+            .center([47, 27])  // Center the map on the Middle East
+            .scale(800)
+            .translate([960, 540]);
+
+        // Define the path generator
+        const path = d3.geoPath()
+            .projection(projection);
+
+        // Function to update the map based on the selected property
+        function updateMap(property) {
+
+
+
+            // Update country colors based on the selected property
+            svg.selectAll(".country")
+                .style("fill", function (d) {
+                    // Find the property value for the current country
+                    const countryData = data.find(country => country.country === d.properties.name);
+                    if (countryData) {
+                        return getColor(property, countryData[property]);
+                    } else {
+                        return "gray"; // Color countries with no data in gray
+                    }
+                });
+
+            // Update labels with the selected property value
+            svg.selectAll(".label")
+                .text(function (d) {
+                    const countryData = data.find(country => country.country === d.properties.name);
+                    return countryData ? countryData[property].toLocaleString() : ""; // Show property value with thousand separators
+                });
+        }
+
+        // Define color scales for each property
+        const colorScales = {
+            index: d3.scaleLinear().domain([0, 1]).range(["yellow", "lightblue"]),
+            population: d3.scaleLinear().domain([0, 110000000]).range(["lightgreen", "lightred"]),
+            newsConsumers: d3.scaleLinear().domain([0, 26045076]).range(["yellow", "lightblue"]),
+            educationalAttainment: d3.scaleLinear().domain([0, 100]).range(["yellow", "lightblue"]),
+            potentialSubscribers: d3.scaleLinear().domain([0, 1]).range(["yellow", "lightblue"]),
+            gdp: d3.scaleLinear().domain([0, 92900]).range(["yellow", "lightgreen"]),
+            targeted: d3.scaleLinear().domain([0, 1]).range(["lightgrey", "lightgreen"])
+        };
+
+        // Function to get color based on property value
+        function getColor(property, value) {
+            // Return color based on the corresponding property scale
+            return colorScales[property](value);
+        }
+
+        // Load and display the GeoJSON data
+        d3.json("https://raw.githubusercontent.com/wjdanalharthi/MENA_GeoJSON/master/MENA.geo.json").then(function (geojson) {
+            // Add country paths with data binding
+            svg.selectAll(".country")
+                .data(geojson.features)
+                .enter()
+                .append("path")
+                .attr("class", "country")
+                .attr("d", path)
+                // Color countries based on Digital Urbanization Index
+                .style("fill", function (d) {
+                    // Find the Digital Urbanization Index for the current country
+                    const countryData = data.find(country => country.country === d.properties.name);
+                    if (countryData) {
+                        return getColor("index", countryData["index"]);
+                    } else {
+                        return "gray"; // Color countries with no data in gray
+                    }
+                })
+
+            // Add labels for country properties
+            svg.selectAll(".label")
+                .data(geojson.features)
+                .enter()
+                .append("text")
+                .attr("class", "label")
+                .attr("x", function (d) {
+                    return path.centroid(d)[0]; // Calculate the centroid x-coordinate
+                })
+                .attr("y", function (d) {
+                    return path.centroid(d)[1]; // Calculate the centroid y-coordinate
+                })
+                .text(function (d) {
+                    // Find the Digital Urbanization Index for the current country
+                    const countryData = data.find(country => country.country === d.properties.name);
+                    return countryData ? countryData.index.toFixed(2) : ""; // Show index with 2 decimal places
+                });
+        });
+        // Initial map update with the default property
+        updateMap("index");
+
+        // Event listener to update the map when the property is changed
+        propertySelect.addEventListener("change", function () {
+            const selectedProperty = propertySelect.value;
+            updateMap(selectedProperty);
+        });
+    </script>
 
 </body>
 
